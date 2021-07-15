@@ -12,12 +12,9 @@ public class App
     public static void main( String[] args )
     {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfig.class);
+        //ClassicMusic magic = context.getBean(ClassicMusic.class);
 
-        MagicSpringClass magigSpringClass = new MagicSpringClass();
-        magigSpringClass.say();
-    }
-
-    public ClassicMusic getBean(ClassicMusic classicMusic){
-        return classicMusic;
+        MagicSpringClass magicSpringClass = new MagicSpringClass(magic);
+        magicSpringClass.say();
     }
 }
