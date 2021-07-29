@@ -1,7 +1,14 @@
 package org.example;
 
-public class ClassicMusic implements Music{
-    public ClassicMusic() {}
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class ClassicMusic implements Music {
+
+    private Integer id = 1;
+    private Long count;
 
     public void doMyInit() {
         System.out.println("Doing my initialization");
@@ -15,4 +22,7 @@ public class ClassicMusic implements Music{
     public String getSong() {
         return "Classic";
     }
+
 }
+
+
