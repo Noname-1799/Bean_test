@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 public class ClassicMusic implements Music {
 
     private Integer id = 1;
-    private Long count;
 
     public void doMyInit() {
         System.out.println("Doing my initialization");
