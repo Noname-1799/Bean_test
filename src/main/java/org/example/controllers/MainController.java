@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.ClassicMusic;
-import org.example.entity.User;
+import org.example.entity.Users;
 import org.example.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,9 +38,9 @@ public class MainController {
     @GetMapping(value = "two")
     public HttpStatus add(){
 
-        User user = new User();
-        user.setName("Marat");
-        user.setId(5);
+        Users user = new Users();
+        user.setName("Anastasia");
+        //user.setId(5);
 
         userRepository.save(user);
         logger.info("All records saved.");
